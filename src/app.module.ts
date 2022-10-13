@@ -7,7 +7,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
   imports: [
-    MongooseModule.forRoot(`mongodb://127.0.0.1:27017`, {
+    MongooseModule.forRoot(`mongodb://0.0.0.0:27017`, {
       user: "admin-blog",
       pass: "a0d579244d370d921ecfc5c07bf1cbaa721446df9d6d8138a8684ba2329401581ce38b0cbb576349fb7eccb867e721079815344b011e4a5440770fa6776872ab",
       dbName: "blog",
@@ -17,7 +17,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       store: redisStore,
 
       // Store-specific configuration:
-      host: 'host.docker.internal',
+      host: '0.0.0.0',
       port: 6379,
     }),
   ],

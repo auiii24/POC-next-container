@@ -6,9 +6,10 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     container_name: blog-api
-    ports:
-      - "0.0.0.0:7001:7001"
-    extra_hosts:
-      - "host.docker.internal:host-gateway"
+    # ports:
+    #   - "0.0.0.0:7001:7001"
+    # extra_hosts:
+    #   - "host.docker.internal:host-gateway"
+    network_mode: host
 
     
