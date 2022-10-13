@@ -1,0 +1,12 @@
+version: "3"
+services:
+  blog-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    container_name: blog-api
+    ports:
+      - "127.0.0.1:7001:7001"
+    extra_hosts:
+    - "host.docker.internal:host-gateway"
