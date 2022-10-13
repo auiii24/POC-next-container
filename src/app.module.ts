@@ -11,7 +11,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       user: "admin-blog",
       pass: "a0d579244d370d921ecfc5c07bf1cbaa721446df9d6d8138a8684ba2329401581ce38b0cbb576349fb7eccb867e721079815344b011e4a5440770fa6776872ab",
       dbName: "blog",
-    }),
+    }, ),
     CacheModule.register<ClientOpts>({
       store: redisStore,
 
