@@ -9,4 +9,4 @@ services:
     ports:
       - "127.0.0.1:7001:7001"
     extra_hosts:
-    - "host.docker.internal:host-gateway"
+      - "host.docker.internal:host-gateway"
