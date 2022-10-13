@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     container_name: blog-api
+    ports: 
+      - "7001"
     # ports:
     #   - "0.0.0.0:7001:7001"
     # extra_hosts:
