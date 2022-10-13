@@ -8,12 +8,7 @@ services:
     container_name: blog-api
     ports:
       - "0.0.0.0:7001:7001"
-    networks:
-      - local-bridge
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
-networks:
-   local-bridge:
-     external: true
     

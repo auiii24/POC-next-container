@@ -17,7 +17,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       store: redisStore,
 
       // Store-specific configuration:
-      host: 'redis.local-bridge',
+      host: 'host.docker.internal',
       port: 6379,
     }),
   ],
